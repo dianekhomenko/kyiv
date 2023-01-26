@@ -1,12 +1,22 @@
 .header-container {
     display: flex;
     flex-direction: row;
-    padding-top: 16px;
-    padding-bottom: 13px;
     align-items: center;
     justify-content: space-between;
-
     color: #F5F5F5;
+
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+    @include tablet {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        }
+    
+    @include desktop {
+            padding-top: 10px;
+            padding-bottom: 6px;
+        }
 }
 
 header {
@@ -28,6 +38,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 0;
 }
 
 .weather {
@@ -38,6 +49,9 @@ header {
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
+    @media screen and (max-width: 388px) {
+        display: none;
+    }
 }
 
 .separ {
@@ -46,10 +60,22 @@ header {
         display: block;
         height: 32px;
         width: 1px;
-        // padding-left: 30px;
-        // padding-right: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+
+    @include tablet {
         margin-left: 30px;
         margin-right: 30px;
+    }
+    @include desktop {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    @media screen and (max-width: 319px) {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
 
 .langs {

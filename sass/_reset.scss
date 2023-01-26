@@ -36,3 +36,19 @@ li {
         display: none;
     }
 }
+
+.mobile-hidden {
+    @media screen and (max-width:999px) {
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+    }
+}
+
+.desktop-hidden {
+    @media screen and (min-width:1920px) {
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+    }
+}

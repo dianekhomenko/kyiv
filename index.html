@@ -15,11 +15,15 @@
     <header>
         <div class="container header-container">
 
-            <div class="logo">
+            <div class="logo mobile-hidden">
                 <img src="/img/logo.svg" alt="hugarda">
             </div>
+            
+            <div class="logo-mobile tablet-hidden desktop-hidden">
+                <img src="/img/logo-mobile.svg" alt="hugarda">
+            </div>
 
-            <nav>
+            <nav class="mobile-hidden">
                 <ul class="list nav-list">
                     <li class="tablet-hidden">Things to do</li>
                     <li class="tablet-hidden">News</li>
@@ -35,7 +39,7 @@
 
             <div class="weather">
                 <img src="/img/weather.svg" alt="cloud and sun">
-                <p><span class="tablet-hidden">Hurghada, Red Sea </span>41° C</p>
+                <p><span class="tablet-hidden mobile-hidden">Hurghada, Red Sea </span>41° C</p>
             </div>
 
             <div>
@@ -70,7 +74,7 @@
             </div>
 
 
-            <div class="lang-switch">
+            <div class="lang-switch mobile-hidden">
                 
                 <select name="langs" class="langs">
                     <option value="en">En</option>

@@ -1,11 +1,23 @@
 .header-container {
   display: flex;
   flex-direction: row;
-  padding-top: 16px;
-  padding-bottom: 13px;
   align-items: center;
   justify-content: space-between;
   color: #F5F5F5;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+@media screen and (min-width: 1000px) {
+  .header-container {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .header-container {
+    padding-top: 10px;
+    padding-bottom: 6px;
+  }
 }
 
 header {
@@ -26,6 +38,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin: 0;
 }
 
 .weather {
@@ -36,14 +49,37 @@ header {
   font-size: 12px;
   line-height: 16px;
 }
+@media screen and (max-width: 388px) {
+  .weather {
+    display: none;
+  }
+}
 
 .separ {
   border-left: 1px solid #616161;
   display: block;
   height: 32px;
   width: 1px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+@media screen and (min-width: 1000px) {
+  .separ {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .separ {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 319px) {
+  .separ {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 .langs {
@@ -98,6 +134,22 @@ li {
 
 @media screen and (max-width: 1919px) and (min-width: 1000px) {
   .tablet-hidden {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .mobile-hidden {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .desktop-hidden {
     opacity: 0;
     visibility: hidden;
     display: none;
