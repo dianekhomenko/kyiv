@@ -21,21 +21,21 @@
 
             <nav>
                 <ul class="list nav-list">
-                    <li>Things to do</li>
-                    <li>News</li>
-                    <li>Night life</li>
+                    <li class="tablet-hidden">Things to do</li>
+                    <li class="tablet-hidden">News</li>
+                    <li class="tablet-hidden">Night life</li>
                     <li>Food guide</li>
                     <li>Real estate</li>
                     <li>Excursions</li>
                     <li>Jobs</li>
-                    <li>Airport transfer</li>
-                    <li>Contact us</li>
+                    <li class="tablet-hidden">Airport transfer</li>
+                    <li class="tablet-hidden">Contact us</li>
                 </ul>
             </nav>
 
             <div class="weather">
                 <img src="/img/weather.svg" alt="cloud and sun">
-                <p>Hurghada, Red Sea 41° C</p>
+                <p><span class="tablet-hidden">Hurghada, Red Sea </span>41° C</p>
             </div>
 
             <div>
@@ -70,7 +70,13 @@
             </div>
 
 
-            <div class="lang-switch">En</div>
+            <div class="lang-switch">
+                
+                <select name="langs" class="langs">
+                    <option value="en">En</option>
+                    <option value="fr">Fr</option>
+                </select>
+            </div>
 
         </div>
     </header>
