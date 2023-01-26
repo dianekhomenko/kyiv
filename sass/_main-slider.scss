@@ -1,0 +1,122 @@
+// Slider
+
+.slideshow-container {
+    width: 100%;
+    margin: auto;
+    z-index: 50;
+}
+
+.mySlides {
+    display: none;
+}
+
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    display: block;
+    transition: background-color 0.6s ease;
+
+}
+
+.separ-dot {
+    border-left: 1px solid #C2C2C2;;
+    display: block;
+    height: 120px;
+    width: 1px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.slider-nav {
+    display: flex;
+    flex-direction: column;
+    max-width: 24px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    z-index: 999;
+
+    position: absolute;
+
+    @media screen and (max-width: 999px) {
+    transform: rotate(270deg);
+    }
+}
+
+.dot:hover {
+    background-color: #FF703E;
+}
+
+.active, .active:hover {
+    background-image: url('/img/active-dot.svg');
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+}
+
+@keyframes fade {
+    from {
+        opacity: .8
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.banner {
+    display: none;
+    width: 100%;
+}
+
+.banner-mobile {
+    @media screen and (max-width: 799px) {
+        display: flex;
+    }
+}
+
+.banner-tablet {
+    @media screen and (max-width: 1399px) and (min-width: 800px) {
+        display: flex;
+    }
+}
+
+.banner-desktop {
+    @media screen and (min-width: 1400px) {
+        display: flex;
+    }
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    @media screen and (max-width: 999px) {
+        justify-content: center;
+        align-items: flex-end;
+    }
+}
+
+// social
+
+.socials {
+        display: flex;
+            flex-direction: column;
+            max-width: 24px;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+            right: 20px;
+            position: absolute;
+}
