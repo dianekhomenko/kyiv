@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -46,9 +47,17 @@
 
             <div>
                 <ul class="header-buttons">
+                    <li> 
+                        <button class="search-btn"><img src="/img/search.svg" alt=""></button>  
+                    </li>
+
+                    <li class="separ">
+                        <span></span>
+                    </li>
+
                     <li>
-                        <div class="search-btn">
-                            <img src="/img/search.svg" alt="">
+                        <div>
+                            <button class="user-btn"><img src="/img/user.svg" alt=""></a>
                         </div>
                     </li>
 
@@ -57,19 +66,9 @@
                     </li>
 
                     <li>
-                        <div class="user-btn">
-                            <img src="/img/user.svg" alt="">
-                        </div>
-                    </li>
-
-                    <li class="separ">
-                        <span></span>
-                    </li>
-
-                    <li>
-                        <div class="menu-btn">
+                        <button class="menu-btn">
                             <img src="/img/text-align-right.svg" alt="">
-                        </div>
+                        </button>
                     </li>
                 </ul>
 
@@ -86,6 +85,27 @@
 
         </div>
     </header>
+
+<!-- start -->
+    <section class="search-bar is-hidden">
+        <label>
+            <svg class="search-bar-icon" width="24" height="24">
+                <use href="img/icons.svg#icon-search-bar"></use>
+            </svg>
+            <input type="text" class="search-input" placeholder="What are you going?">
+
+        </label>
+
+        <button class="close-btn">
+            <svg class="search-bar-close" width="24" height="24">
+                <use href="img/icons.svg#icon-search-bar-close"></use>
+            </svg>
+        </button>
+
+    </section>
+<!-- end-->
+
+
 
     <section class="slider">
         <!-- <img src="/img/background.jpg" alt="" class="slider-background"> -->
@@ -252,5 +272,6 @@
     </footer>
     
     <script src="/js/main-slider.js"></script>
+    <script src="/js/search-opener.js"></script>
 </body>
 </html>

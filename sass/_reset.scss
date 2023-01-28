@@ -27,6 +27,7 @@ li {
 .is-hidden {
     opacity: 0;
     visibility: hidden;
+    display: none;
 }
 
 .tablet-hidden {
@@ -51,4 +52,8 @@ li {
         visibility: hidden;
         display: none;
     }
+}
+
+button {
+    cursor: pointer;
 }

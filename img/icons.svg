@@ -19,5 +19,12 @@
 <path d="M16 0c-8.836 0-16 7.164-16 16s7.164 16 16 16 16-7.164 16-16-7.164-16-16-16zM22.668 10.5c0.743 0.215 1.313 0.798 1.506 1.534l0.003 0.015c0.356 1.366 0.356 4.218 0.356 4.218s0 2.852-0.356 4.218c-0.196 0.751-0.766 1.334-1.494 1.546l-0.015 0.004c-1.331 0.366-6.668 0.366-6.668 0.366s-5.337 0-6.668-0.366c-0.744-0.215-1.314-0.798-1.507-1.534l-0.003-0.015c-0.356-1.366-0.356-4.218-0.356-4.218s0-2.852 0.356-4.218c0.196-0.751 0.766-1.334 1.494-1.546l0.015-0.004c1.331-0.366 6.668-0.366 6.668-0.366s5.337 0 6.668 0.366z"></path>
 <path d="M14.4 19.2v-5.333l4.267 2.667-4.267 2.667z"></path>
 </symbol>
+<symbol id="icon-search-bar" viewBox="0 0 33 32">
+<path fill="none" stroke="#ff703e" style="stroke: var(--color1, #ff703e)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M21.667 12.5c0 4.694-3.806 8.5-8.5 8.5s-8.5-3.806-8.5-8.5c0-4.694 3.806-8.5 8.5-8.5s8.5 3.806 8.5 8.5z"></path>
+<path fill="none" stroke="#ff703e" style="stroke: var(--color1, #ff703e)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M19.777 19.111l7.556 7.556"></path>
+</symbol>
+<symbol id="icon-search-bar-close" viewBox="0 0 33 32">
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M7.333 6.667l18.667 18.667M26 6.667l-18.667 18.667"></path>
+</symbol>
 </defs>
 </svg>
