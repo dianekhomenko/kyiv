@@ -25,7 +25,7 @@ header {
         background: rgba(53, 53, 53, 0.5);
         position: fixed;
         width: 100%;
-        z-index: 100;
+        z-index: 9999;
 }
 
 .nav-list {
@@ -36,6 +36,11 @@ header {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: #F5F5F5;
 }
 
 .header-buttons {

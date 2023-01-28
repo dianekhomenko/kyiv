@@ -1,0 +1,144 @@
+footer {
+    background-color: #757575;
+}
+
+.footer-nav, .footer-content, footer-c {
+    display: flex;
+}
+
+.footer-c {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px solid #EDEDED;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #E0E0E0;
+}
+
+.footer-content {
+    justify-content: space-between;
+    padding: 40px 20px 54px 20px;
+
+    @include desktop {
+    padding: 40px 110px 54px 110px;
+    }
+    @include tablet {
+    padding: 40px 110px 54px 110px;
+    }
+
+    @media screen and (max-width: 399px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.footer-title {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #9E9E9E;
+    margin-top: 0;
+
+    margin-bottom: 16px;
+}
+
+.footer-nav ul {
+padding-left: 0;
+}
+
+.footer-nav {
+    gap: 40px;
+    align-self: baseline;
+
+    @include tablet {
+    gap: 100px;
+    }
+    @include desktop {
+    gap: 100px;
+    }
+
+    @media screen and (max-width: 399px) {
+        align-self: center;
+        justify-content: space-between;
+    }
+}
+
+.footer-nav li {
+    margin-bottom: 8px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.footer-nav a:hover {
+    color: #FF703E;
+}
+
+.contacts ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+ .contact-title {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.contacts a {
+    text-decoration: none;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #1A1A1A;
+}
+
+.socials-footer {
+    display: flex;
+    gap: 10px;
+}
+
+.socials-footer svg {
+    fill: #1A1A1A;
+}
+
+.contact-title {
+    margin-top: 0;
+    margin-bottom: 2px;
+}
+
+.contact-link {
+    margin-bottom: 10px;
+}
+
+.social-title {
+    margin-bottom: 8px;
+}
