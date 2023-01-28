@@ -3,7 +3,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    color: $grey;
+    color: #F5F5F5;
 
     padding-top: 4px;
     padding-bottom: 4px;
@@ -40,7 +40,7 @@ header {
 
 .main-menu a {
     text-decoration: none;
-    color: $grey;
+    color: #F5F5F5;
 }
 
 .header-buttons {
@@ -94,7 +94,7 @@ header {
 .langs {
     background-color: transparent;
     border: none;
-    color: $grey;
+    color: #F5F5F5;
     padding-right: 15px;
 }
 
@@ -147,7 +147,7 @@ backdrop-filter: blur(100px);
 
 .search-input {
     cursor: text;
-    background: $greyDark;
+    background: #9E9E9E;
     border-radius: 4px;
     border-color: transparent;
     min-width: 300px;
@@ -171,7 +171,7 @@ label {
     grid-template: 1fr / auto 1fr;
     gap: 12px;
     border-radius: 5px;
-    background: $greyDark;
+    background: #9E9E9E;
     padding-left: 20px;
     cursor: text;
     padding: 12px 20px 12px 20px;
