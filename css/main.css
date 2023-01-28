@@ -1,3 +1,64 @@
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 480px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1000px) {
+  .container {
+    max-width: 1000px;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: 1920px;
+  }
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+
+@media screen and (max-width: 1919px) and (min-width: 1000px) {
+  .tablet-hidden {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .mobile-hidden {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .desktop-hidden {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
 .header-container {
   display: flex;
   flex-direction: row;
@@ -216,67 +277,6 @@ label > input {
   border: none;
 }
 
-.container {
-  padding-left: 20px;
-  padding-right: 20px;
-  max-width: 480px;
-  margin: 0 auto;
-}
-@media screen and (min-width: 1000px) {
-  .container {
-    max-width: 1000px;
-    align-items: center;
-  }
-}
-@media screen and (min-width: 1920px) {
-  .container {
-    max-width: 1920px;
-  }
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-}
-
-li {
-  list-style: none;
-}
-
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  display: none;
-}
-
-@media screen and (max-width: 1919px) and (min-width: 1000px) {
-  .tablet-hidden {
-    opacity: 0;
-    visibility: hidden;
-    display: none;
-  }
-}
-
-@media screen and (max-width: 999px) {
-  .mobile-hidden {
-    opacity: 0;
-    visibility: hidden;
-    display: none;
-  }
-}
-
-@media screen and (min-width: 1920px) {
-  .desktop-hidden {
-    opacity: 0;
-    visibility: hidden;
-    display: none;
-  }
-}
-
-button {
-  cursor: pointer;
-}
-
 .slideshow-container {
   width: 100%;
   margin: auto;
@@ -292,7 +292,7 @@ button {
   height: 10px;
   width: 10px;
   margin: 0 2px;
-  background-color: #FFFFFF;
+  background-color: white;
   border-radius: 50%;
   display: block;
   transition: background-color 0.6s ease;
@@ -419,7 +419,7 @@ footer {
   background-color: #757575;
 }
 
-.footer-nav, .footer-content, footer-c {
+.footer-nav, .footer-content {
   display: flex;
 }
 
@@ -510,7 +510,7 @@ footer {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: white;
 }
 
 .footer-nav a:hover {
