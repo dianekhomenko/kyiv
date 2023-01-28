@@ -110,15 +110,15 @@
 // social
 
 .socials {
-        display: flex;
-            flex-direction: column;
-            max-width: 24px;
-            gap: 30px;
-            justify-content: center;
-            align-items: center;
-            z-index: 999;
-            right: 20px;
-            position: absolute;
+    display: flex;
+    flex-direction: column;
+    max-width: 24px;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    right: 20px;
+    position: absolute;
 }
 
 .social_icon:hover {
