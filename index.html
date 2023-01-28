@@ -38,7 +38,9 @@
             </nav>
 
             <div class="weather">
-                <img src="/img/weather.svg" alt="cloud and sun">
+                <svg class="icon" width="24" height="24">
+                    <use href="img/icons.svg#icon-weather"></use>
+                </svg> 
                 <p><span class="tablet-hidden mobile-hidden">Hurghada, Red Sea </span>41° C</p>
             </div>
 
@@ -117,11 +119,35 @@
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
 
-        <ul class="socials">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
+        <ul class="socials mobile-hidden">
+            <li>
+                <a href="" class="social_link link">
+                    <svg class="social_icon" width="36" height="36">
+                        <use href="/img/icons.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="" class="social_link link">
+                    <svg class="social_icon" width="36" height="36">
+                        <use href="/img/icons.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="" class="social_link link">
+                    <svg class="social_icon" width="36" height="36">
+                        <use href="/img/icons.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="" class="social_link link">
+                    <svg class="social_icon" width="36" height="36">
+                        <use href="/img/icons.svg#icon-youtube"></use>
+                    </svg>
+                </a>
+            </li>
         </ul>
 
         </div>

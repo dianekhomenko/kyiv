@@ -120,3 +120,12 @@
             right: 20px;
             position: absolute;
 }
+
+.social_icon:hover {
+    fill: #FF703E;
+    transition: fill 0.6s ease;
+}
+
+.social_icon {
+    fill: white;
+}
