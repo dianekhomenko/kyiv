@@ -1,0 +1,215 @@
+.offers-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.see-all {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.6588px;
+    line-height: 19px;
+
+    letter-spacing: 0.02em;
+
+    color: #9E9E9E;
+    text-decoration: none;
+
+    @include tablet {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+.offers {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include desktop {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.card img {
+    width: 420px;
+    height: 380px;
+
+    @include desktop {
+        width: 800px;
+        height: 700px;
+    }
+}
+
+.card {
+    width: 420px;
+
+    @include desktop {
+        width: 800px;
+    }
+}
+
+.offers-slider {
+    display: grid;
+    grid-template-columns: repeat(6, 420px);
+    grid-gap: 10px;
+    overflow: hidden;
+    overflow-x: scroll;
+    scrollbar-width: none;
+
+    @include tablet {
+        grid-template-columns: repeat(6, 420px);
+    }
+
+    @include desktop {
+        grid-template-columns: repeat(6, 800px);
+    }
+
+}
+
+.offers-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.offers-header h2 {
+    margin-bottom: 20px;
+
+    @include tablet {
+        margin-bottom: 30px;
+    }
+}
+
+.card-title {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+
+    color: #424242;
+
+    margin-bottom: 10px;
+
+    @include tablet {
+        font-size: 28px;
+        line-height: 36px;
+
+    }
+}
+
+.card-description {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #757575;
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+    @include tablet {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+.card-content {
+    max-width: 650px;
+    margin-top: 21px;
+}
+
+.review-count {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #424242;
+
+    @include tablet {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+    }
+}
+
+
+.checked-star {
+    fill: #FFE350;
+}
+
+.stars svg {
+    width: 13px;
+    height: 13px;
+
+    @include tablet {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.sticker {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23.71px;
+
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+
+    color: #FF703E;
+
+    background-color: #FFFFFF;
+    padding: 4px 16px;
+
+    border: 1.5px solid #E0E0E0;
+    border-radius: 10px;
+
+    margin-top: 15px;
+    margin-left: 15px;
+
+    position: absolute;
+
+    @include tablet {
+        font-size: 20px;
+        line-height: 28px;
+        margin-top: 20px;
+        margin-left: 20px;
+        padding: 7px 32px;
+    }
+}
+
+.card-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.fav, .share {
+    background: rgba(255, 255, 255, 0.6);
+    border: 1.5px solid #FFFFFF;
+    border-radius: 50px;
+    padding: 6px;
+}
+
+.card-photo {
+    position: relative;
+}
+
