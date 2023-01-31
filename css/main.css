@@ -103,7 +103,7 @@ header {
   padding-right: 15px;
 }
 
-select {
+.lang-switch select {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -952,4 +952,65 @@ footer {
   .partners-list li:nth-child(n+9) {
     display: none;
   }
+}
+
+.transfer-form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  gap: 10px;
+}
+
+.transfer-block {
+  display: flex;
+  align-items: flex-start;
+}
+
+.transfer-h2 {
+  margin-bottom: 30px;
+}
+
+.faq-transfer {
+  margin: 0;
+  width: 60%;
+  padding-left: 40px;
+}
+
+.faq-transfer li:first-child h4 {
+  margin-top: 0;
+}
+
+.faq-transfer h4 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  /* identical to box height, or 140% */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  /* Gray/9O */
+  color: #424242;
+  margin-bottom: 11px;
+}
+
+.faq-transfer p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+  display: flex;
+  align-items: center;
+  /* Gray/7O */
+  color: #757575;
+  margin: 0;
+}
+
+.transfers {
+  padding-bottom: 120px;
+  padding-top: 60px;
 }/*# sourceMappingURL=main.css.map */
