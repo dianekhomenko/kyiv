@@ -1020,32 +1020,42 @@
             <h2 class="transfer-h2">Kyiv Airport Transfers</h2>
             <div class="transfer-block">
             <form class="transfer-form">
-                <select name="airports" id="airports">
+
+                <select name="airports" id="airports" class="form-el">
+                    <option value="" disabled selected>Select airport</option>
                     <option value="kbp">Kyiv-Boryspil Airport (KBP)</option>
                     <option value="cair">Kyiv International Airport</option>
                 </select>
-                <input type="text">
+
+                <input type="text" class="form-el" placeholder="To (airport, port, address)">
 
                 <div class="transfer-opt">
-                <input type="date" name="transfer-date" id="transfer-date">
-                <input type="time" name="transfer-time" id="transfer-time">
-                <select name="people-transfer" id="people-transfer">
+
+                <input placeholder="Select date" class="form-el" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" />
+
+                    <input placeholder="Select time" type="text" name="transfer-time" id="transfer-time" class="form-el" onfocus="(this.type='time')" onblur="(this.type='time')">
+
+                    <select name="people-transfer" id="people-transfer" class="form-el">
+                    <option value="" disabled selected class="holder">Passengers</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
                     <option value="5+">5+</option>
-                </select>
-                <select name="luggage-transfer" id="luggage-transfer">
+                    </select>
+
+                    <select name="luggage-transfer" id="luggage-transfer" class="form-el">
+                    <option value="" disabled selected>Luggage pieces</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
                     <option value="5+">5+</option>
-                </select>
+                    </select>
+
                 </div>
 
-                <button type="submit">Order</button>
+                <button type="submit" class="order-btn">Order</button>
             </form>
 
             <ul class="faq-transfer">
