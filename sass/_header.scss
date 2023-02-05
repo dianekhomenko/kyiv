@@ -43,6 +43,13 @@ header {
     color: #F5F5F5;
 }
 
+.main-menu a:hover {
+    color: #FFFFFF;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #ffe350;
+    transition-duration: 0.1s;
+}
+
 .header-buttons {
     display: flex;
     flex-direction: row;

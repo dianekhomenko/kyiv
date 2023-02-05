@@ -102,17 +102,25 @@
 
 .order-btn {
     background: rgba(233, 233, 233, 0.4);
-        /* Primary/Main
+    border: 2px solid #FFE350;
+    backdrop-filter: blur(10px);    
+    border-radius: 4px;
+    padding: 20px 86px;
     
-    0055A4
-    */
-        border: 2px solid #FF703E;
-        backdrop-filter: blur(10px);
-        /* Note: backdrop-filter has minimal browser support */
-    
-        border-radius: 4px;
-        padding: 20px 86px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+
+    color: #424242;
 }
+
+.order-btn:hover {
+    background-color: #FFE350;
+    transition-duration: 0.3s;
+}
+
 
 .form-el::placeholder {
 font-family: 'Montserrat';
@@ -120,12 +128,9 @@ font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 24px;
-/* identical to box height, or 150% */
 
 display: flex;
 align-items: center;
-
-/* Gray/5O */
 
 color: #C2C2C2;
 
@@ -138,4 +143,14 @@ option[value=""][disabled] {
 select {
     -webkit-appearance: menulist-button;
     color: black;
+}
+
+.transfer-form select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('/img/polygon1.svg');
+    background-repeat: no-repeat, repeat;
+    background-position: right 27px top 50%, 0 0;
+    background-size: .65em auto, 100%;
 }

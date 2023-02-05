@@ -22,6 +22,11 @@
     }
 }
 
+.see-all:hover {
+    color: #FFE350;
+        transition: color 0.6s ease;
+}
+
 .offers {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -211,4 +216,23 @@
 
 .card-photo {
     position: relative;
+}
+
+.fav:hover, .share:hover {
+    cursor: pointer;
+    border: 1.5px solid #FFE350;
+}
+
+.fav {
+    fill: transparent;
+    stroke: #FFE350;
+    stroke-width: 2px
+}
+
+.fav:hover, .fav:active {
+    fill: #FFE350;
+}
+
+.in-fav {
+    fill: #FFE350;
 }

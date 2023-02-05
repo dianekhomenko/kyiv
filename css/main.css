@@ -43,6 +43,13 @@ header {
   color: #F5F5F5;
 }
 
+.main-menu a:hover {
+  color: #FFFFFF;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #ffe350;
+  transition-duration: 0.1s;
+}
+
 .header-buttons {
   display: flex;
   flex-direction: row;
@@ -603,6 +610,11 @@ footer {
   }
 }
 
+.see-all:hover {
+  color: #FFE350;
+  transition: color 0.6s ease;
+}
+
 .offers {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -791,6 +803,25 @@ footer {
   position: relative;
 }
 
+.fav:hover, .share:hover {
+  cursor: pointer;
+  border: 1.5px solid #FFE350;
+}
+
+.fav {
+  fill: transparent;
+  stroke: #FFE350;
+  stroke-width: 2px;
+}
+
+.fav:hover, .fav:active {
+  fill: #FFE350;
+}
+
+.in-fav {
+  fill: #FFE350;
+}
+
 .transfer-form {
   display: flex;
   flex-direction: column;
@@ -883,16 +914,22 @@ footer {
 
 .order-btn {
   background: rgba(233, 233, 233, 0.4);
-  /* Primary/Main
-
-  0055A4
-  */
-  border: 2px solid #FF703E;
+  border: 2px solid #FFE350;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  /* Note: backdrop-filter has minimal browser support */
   border-radius: 4px;
   padding: 20px 86px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #424242;
+}
+
+.order-btn:hover {
+  background-color: #FFE350;
+  transition-duration: 0.3s;
 }
 
 .form-el::-moz-placeholder {
@@ -901,10 +938,8 @@ footer {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height, or 150% */
   display: flex;
   align-items: center;
-  /* Gray/5O */
   color: #C2C2C2;
 }
 
@@ -914,10 +949,8 @@ footer {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height, or 150% */
   display: flex;
   align-items: center;
-  /* Gray/5O */
   color: #C2C2C2;
 }
 
@@ -927,10 +960,8 @@ footer {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  /* identical to box height, or 150% */
   display: flex;
   align-items: center;
-  /* Gray/5O */
   color: #C2C2C2;
 }
 
@@ -941,6 +972,16 @@ option[value=""][disabled] {
 select {
   -webkit-appearance: menulist-button;
   color: black;
+}
+
+.transfer-form select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("/img/polygon1.svg");
+  background-repeat: no-repeat, repeat;
+  background-position: right 27px top 50%, 0 0;
+  background-size: 0.65em auto, 100%;
 }
 
 .partners-list {
@@ -982,6 +1023,20 @@ select {
   .partners-list li:nth-child(n+9) {
     display: none;
   }
+}
+
+.partners-list li {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.partners-list li:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .news-block {
