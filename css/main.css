@@ -909,10 +909,6 @@ footer {
   border: none;
 }
 
-.transfer-opt .form-el {
-  flex: 30%;
-}
-
 .transfer-opt {
   gap: 10px;
   display: flex;
