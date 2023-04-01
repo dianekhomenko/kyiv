@@ -4,7 +4,7 @@
     gap: 10px;
 
     @include tablet {
-    width: 40%;
+        width: 40%;
     }
 }
 
@@ -13,6 +13,7 @@
     align-items: flex-start;
     flex-direction: column;
     gap: 30px;
+
     @include tablet {
         flex-direction: row;
     }
@@ -104,10 +105,10 @@
 .order-btn {
     background: rgba(233, 233, 233, 0.4);
     border: 2px solid #FFE350;
-    backdrop-filter: blur(10px);    
+    backdrop-filter: blur(10px);
     border-radius: 4px;
     padding: 20px 86px;
-    
+
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -127,16 +128,16 @@
 
 
 .form-el::placeholder {
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 24px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
 
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: center;
 
-color: #C2C2C2;
+    color: #C2C2C2;
 
 }
 
@@ -153,7 +154,7 @@ select {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
-    background-image: url('/img/polygon1.svg');
+    background-image: url('img/polygon1.svg');
     background-repeat: no-repeat, repeat;
     background-position: right 0px top 50%, 0 0;
     background-size: .65em auto, 100%;
@@ -165,22 +166,23 @@ select {
 }
 
 .form-grid .icon {
-display: grid;
-position: absolute;
-fill: #FFE350;
+    display: grid;
+    position: absolute;
+    fill: #FFE350;
 }
 
 .transfer-form label {
     display: grid;
     gap: 12px;
     border-radius: 5px;
-   
+
     padding-left: 20px;
     padding: 12px 20px 12px 20px;
 
     background: #FFFFFF;
 
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border: none;
     padding: 21px 20px;
     border-radius: 4px;
 }

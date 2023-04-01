@@ -114,7 +114,7 @@ header {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  background-image: url("/img/polygon1.svg");
+  background-image: url("img/polygon1.svg");
   background-repeat: no-repeat, repeat;
   background-position: left 20px top 50%, 0 0;
   background-size: 0.65em auto, 100%;
@@ -185,7 +185,9 @@ header {
   color: #FFFFFF;
 }
 
-.search-input::placeholder, .search-input:focus, .search-input {
+.search-input::placeholder,
+.search-input:focus,
+.search-input {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -354,8 +356,9 @@ h2 {
   background-color: #FFE350;
 }
 
-.active, .active:hover {
-  background-image: url("/img/active-dot.svg");
+.active,
+.active:hover {
+  background-image: url("img/active-dot.svg");
   background-color: transparent;
   width: 24px;
   height: 24px;
@@ -984,7 +987,7 @@ select {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  background-image: url("/img/polygon1.svg");
+  background-image: url("img/polygon1.svg");
   background-repeat: no-repeat, repeat;
   background-position: right 0px top 50%, 0 0;
   background-size: 0.65em auto, 100%;

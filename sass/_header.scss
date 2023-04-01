@@ -11,21 +11,21 @@
     @include tablet {
         padding-top: 12px;
         padding-bottom: 12px;
-        }
-    
+    }
+
     @include desktop {
-            padding-top: 10px;
-            padding-bottom: 6px;
-        }
+        padding-top: 10px;
+        padding-bottom: 6px;
+    }
 }
 
 header {
-        -webkit-backdrop-filter: blur(10px);
-        backdrop-filter: blur(10px);
-        background: rgba(53, 53, 53, 0.5);
-        position: fixed;
-        width: 100%;
-        z-index: 9999;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background: rgba(53, 53, 53, 0.5);
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
 }
 
 .nav-list {
@@ -69,6 +69,7 @@ header {
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
+
     @media screen and (max-width: 388px) {
         display: none;
     }
@@ -77,16 +78,17 @@ header {
 .separ {
 
     border-left: 1px solid #616161;
-        display: block;
-        height: 32px;
-        width: 1px;
-        margin-left: 20px;
-        margin-right: 20px;
+    display: block;
+    height: 32px;
+    width: 1px;
+    margin-left: 20px;
+    margin-right: 20px;
 
     @include tablet {
         margin-left: 30px;
         margin-right: 30px;
     }
+
     @include desktop {
         margin-left: 30px;
         margin-right: 30px;
@@ -106,15 +108,15 @@ header {
 }
 
 .lang-switch select {
--moz-appearance: none;
+    -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
-    background-image: url('/img/polygon1.svg');
+    background-image: url('img/polygon1.svg');
     background-repeat: no-repeat, repeat;
     background-position: left 20px top 50%, 0 0;
     background-size: .65em auto, 100%;
     z-index: 9999;
-    
+
 }
 
 // buttons
@@ -134,7 +136,7 @@ header {
 }
 
 .search-bar {
-backdrop-filter: blur(100px);
+    backdrop-filter: blur(100px);
     background: rgba(216, 216, 218, 0.2);
     width: 100%;
     padding-top: 16px;
@@ -143,7 +145,7 @@ backdrop-filter: blur(100px);
     gap: 60px;
     justify-content: center;
 
-    @media screen and (max-width: 600px){
+    @media screen and (max-width: 600px) {
         padding-top: 6px;
         padding-bottom: 6px;
         gap: 36px;
@@ -158,13 +160,16 @@ backdrop-filter: blur(100px);
     border-radius: 4px;
     border-color: transparent;
     min-width: 300px;
+
     @media screen and (max-width: 600px) {
-            min-width: 200px;
-        }
+        min-width: 200px;
+    }
 
 }
 
-.search-input::placeholder, .search-input:focus, .search-input {
+.search-input::placeholder,
+.search-input:focus,
+.search-input {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -184,10 +189,10 @@ backdrop-filter: blur(100px);
     padding: 12px 20px 12px 20px;
     width: 480px;
 
-        @media screen and (max-width: 600px) {
-    padding: 8px 20px 8px 20px;
-    width: 250px;
-            }
+    @media screen and (max-width: 600px) {
+        padding: 8px 20px 8px 20px;
+        width: 250px;
+    }
 }
 
 label>input {

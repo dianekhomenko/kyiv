@@ -23,7 +23,8 @@
 }
 
 .separ-dot {
-    border-left: 1px solid #C2C2C2;;
+    border-left: 1px solid #C2C2C2;
+    ;
     display: block;
     height: 120px;
     width: 1px;
@@ -44,7 +45,7 @@
     position: absolute;
 
     @media screen and (max-width: 999px) {
-    transform: rotate(270deg);
+        transform: rotate(270deg);
     }
 }
 
@@ -52,8 +53,9 @@
     background-color: #FFE350;
 }
 
-.active, .active:hover {
-    background-image: url('/img/active-dot.svg');
+.active,
+.active:hover {
+    background-image: url('img/active-dot.svg');
     background-color: transparent;
     width: 24px;
     height: 24px;
@@ -63,6 +65,7 @@
     from {
         opacity: .8
     }
+
     to {
         opacity: 1
     }

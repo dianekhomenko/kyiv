@@ -1,1208 +1,2183 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
     <title>Main page</title>
-    <link rel="stylesheet" href="css/main.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="css/main.min.css" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap"
+      rel="stylesheet" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header>
-        <div class="container header-container">
-
-            <div class="logo mobile-hidden">
-                <img src="/img/logo.svg" alt="kyiv">
-            </div>
-            
-            <div class="logo-mobile tablet-hidden desktop-hidden">
-                <img src="/img/logo.svg" alt="kyiv">
-            </div>
-
-            <nav class="mobile-hidden main-menu">
-                <ul class="list nav-list">
-                    <li class="tablet-hidden"><a href="/">Things to do</a></li>
-                    <li class="tablet-hidden"><a href="/">News</a></li>
-                    <li class="tablet-hidden"><a href="/">Night life</a></li>
-                    <li><a href="/">Food guide</a></li>
-                    <li><a href="/">Real estate</a></li>
-                    <li><a href="/">Excursions</a></li>
-                    <li><a href="/">Jobs</a></li>
-                    <li class="tablet-hidden"><a href="/">Airport transfer</a></li>
-                    <li class="tablet-hidden"><a href="/">Contact us</a></li>
-                </ul>
-            </nav>
-
-            <div class="weather">
-                <svg class="icon" width="24" height="24">
-                    <use href="img/icons.svg#icon-weather"></use>
-                </svg> 
-                <p><span class="tablet-hidden mobile-hidden">Kyiv </span>27° C</p>
-            </div>
-
-            <div>
-                <ul class="header-buttons">
-                    <li> 
-                        <button class="search-btn"><img src="/img/search.svg" alt=""></button>  
-                    </li>
-
-                    <li class="separ">
-                        <span></span>
-                    </li>
-                
-
-                    <li>
-                        <button class="menu-btn">
-                            <img src="/img/text-align-right.svg" alt="">
-                        </button>
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-            <div class="lang-switch mobile-hidden">
-                
-                <select name="langs" class="langs">
-                    <option value="en">En</option>
-                    <option value="fr">Fr</option>
-                </select>
-            </div>
-
+      <div class="container header-container">
+        <div class="logo mobile-hidden">
+          <img src="img/logo.svg" alt="kyiv" />
         </div>
+
+        <div
+          class="logo-mobile tablet-hidden desktop-hidden">
+          <img src="img/logo.svg" alt="kyiv" />
+        </div>
+
+        <nav class="mobile-hidden main-menu">
+          <ul class="list nav-list">
+            <li class="tablet-hidden">
+              <a href="/">Things to do</a>
+            </li>
+            <li class="tablet-hidden">
+              <a href="/">News</a>
+            </li>
+            <li class="tablet-hidden">
+              <a href="/">Night life</a>
+            </li>
+            <li><a href="/">Food guide</a></li>
+            <li><a href="/">Real estate</a></li>
+            <li><a href="/">Excursions</a></li>
+            <li><a href="/">Jobs</a></li>
+            <li class="tablet-hidden">
+              <a href="/">Airport transfer</a>
+            </li>
+            <li class="tablet-hidden">
+              <a href="/">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="weather">
+          <svg
+            class="icon"
+            width="24"
+            height="24">
+            <use
+              href="img/icons.svg#icon-weather"></use>
+          </svg>
+          <p>
+            <span
+              class="tablet-hidden mobile-hidden"
+              >Kyiv </span
+            >27° C
+          </p>
+        </div>
+
+        <div>
+          <ul class="header-buttons">
+            <li>
+              <button class="search-btn">
+                <img
+                  src="img/search.svg"
+                  alt="" />
+              </button>
+            </li>
+
+            <li class="separ">
+              <span></span>
+            </li>
+
+            <li>
+              <button class="menu-btn">
+                <img
+                  src="img/text-align-right.svg"
+                  alt="" />
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="lang-switch mobile-hidden">
+          <select name="langs" class="langs">
+            <option value="en">En</option>
+            <option value="fr">Fr</option>
+          </select>
+        </div>
+      </div>
     </header>
 
     <div class="search-bar is-hidden">
-        <label>
-            <svg class="search-bar-icon" width="24" height="24">
-                <use href="img/icons.svg#icon-search-bar"></use>
-            </svg>
-            <input type="text" class="search-input" placeholder="What are you going?">
+      <label>
+        <svg
+          class="search-bar-icon"
+          width="24"
+          height="24">
+          <use
+            href="img/icons.svg#icon-search-bar"></use>
+        </svg>
+        <input
+          type="text"
+          class="search-input"
+          placeholder="What are you going?" />
+      </label>
 
-        </label>
-
-        <button class="close-btn">
-            <svg class="search-bar-close" width="24" height="24">
-                <use href="img/icons.svg#icon-search-bar-close"></use>
-            </svg>
-        </button>
-
+      <button class="close-btn">
+        <svg
+          class="search-bar-close"
+          width="24"
+          height="24">
+          <use
+            href="img/icons.svg#icon-search-bar-close"></use>
+        </svg>
+      </button>
     </div>
 
     <section class="slider">
-        <!-- <img src="/img/background.jpg" alt="" class="slider-background"> -->
-        <div class="slideshow-container">
+      <!-- <img src="img/background.jpg" alt="" class="slider-background"> -->
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img
+            src="img/banner-kyiv-1.jpg"
+            alt=""
+            class="banner banner-desktop" />
+          <img
+            src="img/banner-kyiv-mob-1.jpg"
+            alt=""
+            class="banner banner-mobile" />
+        </div>
 
         <div class="mySlides fade">
-            <img src="/img/banner-kyiv-1.jpg" alt="" class="banner banner-desktop">
-            <img src="/img/banner-kyiv-mob-1.jpg"  alt="" class="banner banner-mobile">
+          <img
+            src="img/banner-2.jpeg"
+            alt=""
+            class="banner banner-desktop" />
+          <img
+            src="img/banner-mob-2.jpg"
+            alt=""
+            class="banner banner-mobile" />
         </div>
 
         <div class="mySlides fade">
-            <img src="/img/banner-2.jpeg" alt="" class="banner banner-desktop">
-            <img src="/img/banner-mob-2.jpg" alt="" class="banner banner-mobile">
+          <img
+            src="img/banner-kyiv-1.jpg"
+            alt=""
+            class="banner banner-desktop" />
+          <img
+            src="img/banner-kyiv-mob-1.jpg"
+            alt=""
+            class="banner banner-mobile" />
         </div>
+      </div>
 
-        <div class="mySlides fade">
-            <img src="/img/banner-kyiv-1.jpg" alt="" class="banner banner-desktop">
-            <img src="/img/banner-kyiv-mob-1.jpg" alt="" class="banner banner-mobile">
-        </div>
+      <div class="slider-nav">
+        <span
+          class="dot"
+          onclick="currentSlide(1)"></span>
+        <span
+          class="separ-dot"
+          onclick="currentSlide(2)"></span>
+        <span
+          class="dot"
+          onclick="currentSlide(2)"></span>
+        <span
+          class="separ-dot"
+          onclick="currentSlide(3)"></span>
+        <span
+          class="dot"
+          onclick="currentSlide(3)"></span>
+      </div>
 
-        </div>
-
-        <div class="slider-nav">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="separ-dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="separ-dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-
-        <ul class="socials mobile-hidden">
-            <li>
-                <a href="" class="social_link link">
-                    <svg class="social_icon" width="36" height="36">
-                        <use href="/img/icons.svg#icon-facebook"></use>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a href="" class="social_link link">
-                    <svg class="social_icon" width="36" height="36">
-                        <use href="/img/icons.svg#icon-instagram"></use>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a href="" class="social_link link">
-                    <svg class="social_icon" width="36" height="36">
-                        <use href="/img/icons.svg#icon-twitter"></use>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a href="" class="social_link link">
-                    <svg class="social_icon" width="36" height="36">
-                        <use href="/img/icons.svg#icon-youtube"></use>
-                    </svg>
-                </a>
-            </li>
-        </ul>
-
+      <ul class="socials mobile-hidden">
+        <li>
+          <a href="" class="social_link link">
+            <svg
+              class="social_icon"
+              width="36"
+              height="36">
+              <use
+                href="img/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="" class="social_link link">
+            <svg
+              class="social_icon"
+              width="36"
+              height="36">
+              <use
+                href="img/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="" class="social_link link">
+            <svg
+              class="social_icon"
+              width="36"
+              height="36">
+              <use
+                href="img/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="" class="social_link link">
+            <svg
+              class="social_icon"
+              width="36"
+              height="36">
+              <use
+                href="img/icons.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </section>
 
     <section class="things offers">
-        <div class="container">
-            <div class="offers-header">
-                <h2>THINGS TO DO IN Kyiv</h2>
-                <a href="/" class="see-all">SEE ALL</a>
-            </div>
-
-            <div class="offers-slider">
-                
-                <div class="card">
-                    <div class="card-photo">
-                            <span class="sticker">Adventure</span>
-                            <div class="card-buttons">
-                                <svg class="fav in-fav" width="24" height="24">
-                                    <use href="img/icons.svg#icon-heart-fill"></use>
-                                </svg>
-                                <svg class="share" width="24" height="24">
-                                    <use href="img/icons.svg#icon-share"></use>
-                                </svg>
-                            </div>
-
-                        <img src="/img/chornobyl.jpeg" alt="chornobyl">
-                    </div>
-                    
-                    <div class="card-content">
-                        <div class="rating">
-                            <span class="stars">
-                                <svg class="icon-star checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                            </span>
-                        
-                            <span class="review-count">187 reviews</span>
-                        </div>
-                        <h3 class="card-title">Full day group tour to Chornobyl and Prypiat</h3>
-                        <p class="card-description">Learn more about the history of events in this
-                        notorious place, and what happened to some of the people who lived and worked in Chornobyl and Pripyat.</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                                        <div class="card-photo">
-                                            <span class="sticker">Tour</span>
-                                            <div class="card-buttons">
-                                                <svg class="fav" width="24" height="24">
-                                                    <use href="img/icons.svg#icon-heart-fill"></use>
-                                                </svg>
-                                                <svg class="share" width="24" height="24">
-                                                    <use href="img/icons.svg#icon-share"></use>
-                                                </svg>
-                                            </div>
-                    <img src="/img/ancient.jpeg" alt="">
-                    </div>
-                    <div class="card-content">
-                        <div class="rating">
-                            <span class="stars">
-                                <svg class="icon-star checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                            </span>
-                        
-                            <span class="review-count">187 reviews</span>
-                        </div>
-                        <h3 class="card-title">2 hours Private Walking Tour in Ancient Kiev</h3>
-                        <p class="card-description">The local guide will tell you a lot about Ukrainian history, 
-                            culture and the modern life of the our beautiful city.</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-photo">
-                        <span class="sticker">Adventure</span>
-                        <div class="card-buttons">
-                            <svg class="fav" width="24" height="24">
-                                <use href="img/icons.svg#icon-heart-fill"></use>
-                            </svg>
-                            <svg class="share" width="24" height="24">
-                                <use href="img/icons.svg#icon-share"></use>
-                            </svg>
-                        </div>
-                    <img src="/img/extreme.jpeg" alt="">
-                    </div>
-                    <div class="card-content">
-                        <div class="rating">
-                            <span class="stars">
-                                <svg class="icon-star checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg> 
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                            </span>
-
-                            <span class="review-count">187 reviews</span>
-                        </div>
-                        <h3 class="card-title">Extreme Show Kyiv</h3>
-                        <p class="card-description">The first in Ukraine real haunted house,
-                        here you will feel yourself a hero of a horror movie in reality</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                                        <div class="card-photo">
-                                            <span class="sticker">Adventure</span>
-                                            <div class="card-buttons">
-                                                <svg class="fav" width="24" height="24">
-                                                    <use href="img/icons.svg#icon-heart-fill"></use>
-                                                </svg>
-                                                <svg class="share" width="24" height="24">
-                                                    <use href="img/icons.svg#icon-share"></use>
-                                                </svg>
-                                            </div>
-                    <img src="/img/arc.jpeg" alt="">
-                    </div>
-                    <div class="card-content">
-                        <div class="rating">
-                            <span class="stars">
-                                <svg class="icon-star checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                            </span>
-                
-                            <span class="review-count">187 reviews</span>
-                        </div>
-                        <h3 class="card-title">Kyiv centre overview walking</h3>
-                        <p class="card-description">City introduction tour through touristic and off-the-beaten-path, 
-                            stories with some guide's personal experience.</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-photo">
-                        <span class="sticker">Adventure</span>
-                        <div class="card-buttons">
-                            <svg class="fav" width="24" height="24">
-                                <use href="img/icons.svg#icon-heart-fill"></use>
-                            </svg>
-                            <svg class="share" width="24" height="24">
-                                <use href="img/icons.svg#icon-share"></use>
-                            </svg>
-                        </div>
-                
-                        <img src="/img/chornobyl.jpeg" alt="chornobyl">
-                    </div>
-                
-                    <div class="card-content">
-                        <div class="rating">
-                            <span class="stars">
-                                <svg class="icon-star checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                            </span>
-                
-                            <span class="review-count">187 reviews</span>
-                        </div>
-                        <h3 class="card-title">Full day group tour to Chornobyl and Prypiat</h3>
-                        <p class="card-description">Learn more about the history of events in this
-                            notorious place, and what happened to some of the people who lived and worked in Chornobyl and Pripyat.</p>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-photo">
-                        <span class="sticker">Tour</span>
-                        <div class="card-buttons">
-                            <svg class="fav" width="24" height="24">
-                                <use href="img/icons.svg#icon-heart-fill"></use>
-                            </svg>
-                            <svg class="share" width="24" height="24">
-                                <use href="img/icons.svg#icon-share"></use>
-                            </svg>
-                        </div>
-                        <img src="/img/ancient.jpeg" alt="">
-                    </div>
-                    <div class="card-content">
-                        <div class="rating">
-                            <span class="stars">
-                                <svg class="icon-star checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                            </span>
-                
-                            <span class="review-count">187 reviews</span>
-                        </div>
-                        <h3 class="card-title">2 hours Private Walking Tour in Ancient Kiev</h3>
-                        <p class="card-description">The local guide will tell you a lot about Ukrainian history,
-                            culture and the modern life of the our beautiful city.</p>
-                    </div>
-                </div>
-                
-
-            </div>
-
+      <div class="container">
+        <div class="offers-header">
+          <h2>THINGS TO DO IN Kyiv</h2>
+          <a href="/" class="see-all">SEE ALL</a>
         </div>
 
+        <div class="offers-slider">
+          <div class="card">
+            <div class="card-photo">
+              <span class="sticker"
+                >Adventure</span
+              >
+              <div class="card-buttons">
+                <svg
+                  class="fav in-fav"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-heart-fill"></use>
+                </svg>
+                <svg
+                  class="share"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-share"></use>
+                </svg>
+              </div>
+
+              <img
+                src="img/chornobyl.jpeg"
+                alt="chornobyl" />
+            </div>
+
+            <div class="card-content">
+              <div class="rating">
+                <span class="stars">
+                  <svg
+                    class="icon-star checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                </span>
+
+                <span class="review-count"
+                  >187 reviews</span
+                >
+              </div>
+              <h3 class="card-title">
+                Full day group tour to Chornobyl
+                and Prypiat
+              </h3>
+              <p class="card-description">
+                Learn more about the history of
+                events in this notorious place,
+                and what happened to some of the
+                people who lived and worked in
+                Chornobyl and Pripyat.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-photo">
+              <span class="sticker">Tour</span>
+              <div class="card-buttons">
+                <svg
+                  class="fav"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-heart-fill"></use>
+                </svg>
+                <svg
+                  class="share"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-share"></use>
+                </svg>
+              </div>
+              <img
+                src="img/ancient.jpeg"
+                alt="" />
+            </div>
+            <div class="card-content">
+              <div class="rating">
+                <span class="stars">
+                  <svg
+                    class="icon-star checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                </span>
+
+                <span class="review-count"
+                  >187 reviews</span
+                >
+              </div>
+              <h3 class="card-title">
+                2 hours Private Walking Tour in
+                Ancient Kiev
+              </h3>
+              <p class="card-description">
+                The local guide will tell you a
+                lot about Ukrainian history,
+                culture and the modern life of the
+                our beautiful city.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-photo">
+              <span class="sticker"
+                >Adventure</span
+              >
+              <div class="card-buttons">
+                <svg
+                  class="fav"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-heart-fill"></use>
+                </svg>
+                <svg
+                  class="share"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-share"></use>
+                </svg>
+              </div>
+              <img
+                src="img/extreme.jpeg"
+                alt="" />
+            </div>
+            <div class="card-content">
+              <div class="rating">
+                <span class="stars">
+                  <svg
+                    class="icon-star checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                </span>
+
+                <span class="review-count"
+                  >187 reviews</span
+                >
+              </div>
+              <h3 class="card-title">
+                Extreme Show Kyiv
+              </h3>
+              <p class="card-description">
+                The first in Ukraine real haunted
+                house, here you will feel yourself
+                a hero of a horror movie in
+                reality
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-photo">
+              <span class="sticker"
+                >Adventure</span
+              >
+              <div class="card-buttons">
+                <svg
+                  class="fav"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-heart-fill"></use>
+                </svg>
+                <svg
+                  class="share"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-share"></use>
+                </svg>
+              </div>
+              <img src="img/arc.jpeg" alt="" />
+            </div>
+            <div class="card-content">
+              <div class="rating">
+                <span class="stars">
+                  <svg
+                    class="icon-star checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                </span>
+
+                <span class="review-count"
+                  >187 reviews</span
+                >
+              </div>
+              <h3 class="card-title">
+                Kyiv centre overview walking
+              </h3>
+              <p class="card-description">
+                City introduction tour through
+                touristic and off-the-beaten-path,
+                stories with some guide's personal
+                experience.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-photo">
+              <span class="sticker"
+                >Adventure</span
+              >
+              <div class="card-buttons">
+                <svg
+                  class="fav"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-heart-fill"></use>
+                </svg>
+                <svg
+                  class="share"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-share"></use>
+                </svg>
+              </div>
+
+              <img
+                src="img/chornobyl.jpeg"
+                alt="chornobyl" />
+            </div>
+
+            <div class="card-content">
+              <div class="rating">
+                <span class="stars">
+                  <svg
+                    class="icon-star checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                </span>
+
+                <span class="review-count"
+                  >187 reviews</span
+                >
+              </div>
+              <h3 class="card-title">
+                Full day group tour to Chornobyl
+                and Prypiat
+              </h3>
+              <p class="card-description">
+                Learn more about the history of
+                events in this notorious place,
+                and what happened to some of the
+                people who lived and worked in
+                Chornobyl and Pripyat.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-photo">
+              <span class="sticker">Tour</span>
+              <div class="card-buttons">
+                <svg
+                  class="fav"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-heart-fill"></use>
+                </svg>
+                <svg
+                  class="share"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-share"></use>
+                </svg>
+              </div>
+              <img
+                src="img/ancient.jpeg"
+                alt="" />
+            </div>
+            <div class="card-content">
+              <div class="rating">
+                <span class="stars">
+                  <svg
+                    class="icon-star checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                </span>
+
+                <span class="review-count"
+                  >187 reviews</span
+                >
+              </div>
+              <h3 class="card-title">
+                2 hours Private Walking Tour in
+                Ancient Kiev
+              </h3>
+              <p class="card-description">
+                The local guide will tell you a
+                lot about Ukrainian history,
+                culture and the modern life of the
+                our beautiful city.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="news">
-        <div class="container">
-            <div class="offers-header">
-                <h2>Kyiv News</h2>
-                <a href="/" class="see-all">SEE ALL</a>
-            </div>
-
-            <ul class="news-block">
-                <li class="news-item1">
-                    <img src="/img/news1n.jpg" alt="">
-                    <div class="news-decsription">
-                        <h3>The Metropolitan Museum of Theater Arts celebrates 100 years</h3>
-                        <p class="news-description-p">It was founded on January 30, 1923 as a theater museum at the Berezil Art Association...</p>
-                        <p class="news-date">
-                            <svg class="icon" width="24" height="24">
-                            <use href="img/icons.svg#icon-calendar"></use>
-                        </svg>
-                            12/20/2022 3:16:06 PM</p>
-                    </div>
-                </li>
-                <li class="news-item2">
-                    <img src="/img/news3n.jpeg" alt="">
-                    <div class="news-decsription">
-                        <h3>Kyiv zookeepers are lighting fires to keep their animals warm</h3>
-                        <p class="news-date">
-                            <svg class="icon" width="24" height="24">
-                                <use href="img/icons.svg#icon-calendar"></use>
-                            </svg>
-                            12/20/2022 3:16:06 PM</p>
-                    </div>
-                </li>
-                <li class="news-item3">
-                    <img src="/img/news2n.jpeg" alt="" height="250">
-                    <div class="news-decsription">
-                        <h3>From carols to premieres: concerts at the capital's Philharmonic</h3>
-                        <p class="news-date">
-                            <svg class="icon" width="24" height="24">
-                                <use href="img/icons.svg#icon-calendar"></use>
-                            </svg>
-                            12/20/2022 3:16:06 PM</p>
-                    </div>
-                </li>
-            </ul>
+      <div class="container">
+        <div class="offers-header">
+          <h2>Kyiv News</h2>
+          <a href="/" class="see-all">SEE ALL</a>
         </div>
+
+        <ul class="news-block">
+          <li class="news-item1">
+            <img src="img/news1n.jpg" alt="" />
+            <div class="news-decsription">
+              <h3>
+                The Metropolitan Museum of Theater
+                Arts celebrates 100 years
+              </h3>
+              <p class="news-description-p">
+                It was founded on January 30, 1923
+                as a theater museum at the Berezil
+                Art Association...
+              </p>
+              <p class="news-date">
+                <svg
+                  class="icon"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-calendar"></use>
+                </svg>
+                12/20/2022 3:16:06 PM
+              </p>
+            </div>
+          </li>
+          <li class="news-item2">
+            <img src="img/news3n.jpeg" alt="" />
+            <div class="news-decsription">
+              <h3>
+                Kyiv zookeepers are lighting fires
+                to keep their animals warm
+              </h3>
+              <p class="news-date">
+                <svg
+                  class="icon"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-calendar"></use>
+                </svg>
+                12/20/2022 3:16:06 PM
+              </p>
+            </div>
+          </li>
+          <li class="news-item3">
+            <img
+              src="img/news2n.jpeg"
+              alt=""
+              height="250" />
+            <div class="news-decsription">
+              <h3>
+                From carols to premieres: concerts
+                at the capital's Philharmonic
+              </h3>
+              <p class="news-date">
+                <svg
+                  class="icon"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-calendar"></use>
+                </svg>
+                12/20/2022 3:16:06 PM
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="accomodation offers">
-        <div class="container">
-            <div class="offers-header">
-                <h2>Kyiv accomodation</h2>
-                <a href="/" class="see-all">SEE ALL</a>
-            </div>
-            
-            <div class="offers-slider">
-            
-            <div class="card">
-                <div class="card-photo">
-                    <div class="card-buttons">
-                        <svg class="fav" width="24" height="24">
-                            <use href="img/icons.svg#icon-heart-fill"></use>
-                        </svg>
-                        <svg class="share" width="24" height="24">
-                            <use href="img/icons.svg#icon-share"></use>
-                        </svg>
-                    </div>
-            
-                    <img src="/img/night1.jpeg" alt="">
-                </div>
-            
-                <div class="card-content">
-                    <div class="rating">
-                        <span class="stars">
-                            <svg class="icon-star checked-star" width="24" height="24">
-                                <use href="img/icons.svg#icon-star"></use>
-                            </svg>
-                            <svg class="icon checked-star" width="24" height="24">
-                                <use href="img/icons.svg#icon-star"></use>
-                            </svg>
-                            <svg class="icon checked-star" width="24" height="24">
-                                <use href="img/icons.svg#icon-star"></use>
-                            </svg>
-                            <svg class="icon checked-star" width="24" height="24">
-                                <use href="img/icons.svg#icon-star"></use>
-                            </svg>
-                            <svg class="icon checked-star" width="24" height="24">
-                                <use href="img/icons.svg#icon-star"></use>
-                            </svg>
-                        </span>
+      <div class="container">
+        <div class="offers-header">
+          <h2>Kyiv accomodation</h2>
+          <a href="/" class="see-all">SEE ALL</a>
+        </div>
 
-                        <span class="review-count">187 reviews</span>
-                    </div>
-                    
-                    <h3 class="card-title">DuPort Pool Club El Gouna</h3>
-                        <p class="card-description">DuPort Pool Club El Gouna is set out to be among Kyiv’s 
-                                    most exclusive nightlife venues. The regal, wood-panelled...</p>
-                </div>
+        <div class="offers-slider">
+          <div class="card">
+            <div class="card-photo">
+              <div class="card-buttons">
+                <svg
+                  class="fav"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-heart-fill"></use>
+                </svg>
+                <svg
+                  class="share"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-share"></use>
+                </svg>
+              </div>
+
+              <img src="img/night1.jpeg" alt="" />
             </div>
-            
-            <div class="card">
-                <div class="card-photo">
-                    <div class="card-buttons">
-                        <svg class="fav" width="24" height="24">
-                            <use href="img/icons.svg#icon-heart-fill"></use>
-                        </svg>
-                        <svg class="share" width="24" height="24">
-                            <use href="img/icons.svg#icon-share"></use>
-                        </svg>
-                    </div>
-                    <img src="/img/night2.jpeg" alt="">
-                </div>
-                <div class="card-content">
-                    <div class="rating">
-                        <span class="stars">
-                            <svg class="icon-star checked-star" width="24" height="24">
-                                <use href="img/icons.svg#icon-star"></use>
-                            </svg>
-                            <svg class="icon checked-star" width="24" height="24">
-                                <use href="img/icons.svg#icon-star"></use>
-                            </svg>
-                            <svg class="icon checked-star" width="24" height="24">
-                                <use href="img/icons.svg#icon-star"></use>
-                            </svg>
-                            <svg class="icon checked-star" width="24" height="24">
-                                <use href="img/icons.svg#icon-star"></use>
-                            </svg>
-                            <svg class="icon checked-star" width="24" height="24">
-                                <use href="img/icons.svg#icon-star"></use>
-                            </svg>
-                        </span>
-            
-                        <span class="review-count">187 reviews</span>
-                    </div>
-                    <h3 class="card-title">Papas Club</h3>
-                    <p class="card-description">Papas Club is the venue specially created for YOU! 
-                                    If you want to get the unforgettable experience chilling out on the
-                                Red Sea...</p>
-                </div>
+
+            <div class="card-content">
+              <div class="rating">
+                <span class="stars">
+                  <svg
+                    class="icon-star checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                </span>
+
+                <span class="review-count"
+                  >187 reviews</span
+                >
+              </div>
+
+              <h3 class="card-title">
+                DuPort Pool Club El Gouna
+              </h3>
+              <p class="card-description">
+                DuPort Pool Club El Gouna is set
+                out to be among Kyiv’s most
+                exclusive nightlife venues. The
+                regal, wood-panelled...
+              </p>
             </div>
-            
-            <div class="card">
-                            <div class="card-photo">
-                     
-                                <div class="card-buttons">
-                                    <svg class="fav" width="24" height="24">
-                                        <use href="img/icons.svg#icon-heart-fill"></use>
-                                    </svg>
-                                    <svg class="share" width="24" height="24">
-                                        <use href="img/icons.svg#icon-share"></use>
-                                    </svg>
-                                </div>
-                                <img src="/img/night3.jpg" alt="">
-                            </div>
-                            <div class="card-content">
-                                <div class="rating">
-                                    <span class="stars">
-                                        <svg class="icon-star checked-star" width="24" height="24">
-                                            <use href="img/icons.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="icon checked-star" width="24" height="24">
-                                            <use href="img/icons.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="icon checked-star" width="24" height="24">
-                                            <use href="img/icons.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="icon checked-star" width="24" height="24">
-                                            <use href="img/icons.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="icon checked-star" width="24" height="24">
-                                            <use href="img/icons.svg#icon-star"></use>
-                                        </svg>
-                                    </span>
-            
-                                    <span class="review-count">187 reviews</span>
-                                </div>
-                                <h3 class="card-title">Elements Club & Lounge</h3>
-                                <p class="card-description">An American inspired night sport, offering offbeat dance 
-                                    floor that is rocked daily by our talented DJ's to vocal
-                                performances and Karaoke nights</p>
-                            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-photo">
+              <div class="card-buttons">
+                <svg
+                  class="fav"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-heart-fill"></use>
+                </svg>
+                <svg
+                  class="share"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-share"></use>
+                </svg>
+              </div>
+              <img src="img/night2.jpeg" alt="" />
             </div>
-                        
-            <div class="card">
-                            <div class="card-photo">
-                           
-                                <div class="card-buttons">
-                                    <svg class="fav" width="24" height="24">
-                                        <use href="img/icons.svg#icon-heart-fill"></use>
-                                    </svg>
-                                    <svg class="share" width="24" height="24">
-                                        <use href="img/icons.svg#icon-share"></use>
-                                    </svg>
-                                </div>
-                                <img src="/img/night1.jpeg" alt="">
-                            </div>
-                            <div class="card-content">
-                                <div class="rating">
-                                    <span class="stars">
-                                        <svg class="icon-star checked-star" width="24" height="24">
-                                            <use href="img/icons.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="icon checked-star" width="24" height="24">
-                                            <use href="img/icons.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="icon checked-star" width="24" height="24">
-                                            <use href="img/icons.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="icon checked-star" width="24" height="24">
-                                            <use href="img/icons.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="icon checked-star" width="24" height="24">
-                                            <use href="img/icons.svg#icon-star"></use>
-                                        </svg>
-                                    </span>
-            
-                                    <span class="review-count">187 reviews</span>
-                                </div>
-                                <h3 class="card-title">DuPort Pool Club El Gouna</h3>
-                                <p class="card-description">DuPort Pool Club El Gouna is set out to be among Kyiv’s
-                                most exclusive nightlife venues. The regal, wood-panelled...</p>
-                            </div>
+            <div class="card-content">
+              <div class="rating">
+                <span class="stars">
+                  <svg
+                    class="icon-star checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                </span>
+
+                <span class="review-count"
+                  >187 reviews</span
+                >
+              </div>
+              <h3 class="card-title">
+                Papas Club
+              </h3>
+              <p class="card-description">
+                Papas Club is the venue specially
+                created for YOU! If you want to
+                get the unforgettable experience
+                chilling out on the Red Sea...
+              </p>
             </div>
-            
-            <div class="card">
-                            <div class="card-photo">
-                     
-                                <div class="card-buttons">
-                                    <svg class="fav" width="24" height="24">
-                                        <use href="img/icons.svg#icon-heart-fill"></use>
-                                    </svg>
-                                    <svg class="share" width="24" height="24">
-                                        <use href="img/icons.svg#icon-share"></use>
-                                    </svg>
-                                </div>
-                                <img src="/img/night2.jpeg" alt="">
-                            </div>
-                            <div class="card-content">
-                                <div class="rating">
-                                    <span class="stars">
-                                        <svg class="icon-star checked-star" width="24" height="24">
-                                            <use href="img/icons.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="icon checked-star" width="24" height="24">
-                                            <use href="img/icons.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="icon checked-star" width="24" height="24">
-                                            <use href="img/icons.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="icon checked-star" width="24" height="24">
-                                            <use href="img/icons.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="icon checked-star" width="24" height="24">
-                                            <use href="img/icons.svg#icon-star"></use>
-                                        </svg>
-                                    </span>
-            
-                                    <span class="review-count">187 reviews</span>
-                                </div>
-                                <h3 class="card-title">DuPort Pool Club El Gouna</h3>
-                                <p class="card-description">DuPort Pool Club El Gouna is set out to be among Kyiv’s
-                                most exclusive nightlife venues. The regal, wood-panelled...</p>
-                            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-photo">
+              <div class="card-buttons">
+                <svg
+                  class="fav"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-heart-fill"></use>
+                </svg>
+                <svg
+                  class="share"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-share"></use>
+                </svg>
+              </div>
+              <img src="img/night3.jpg" alt="" />
             </div>
-            
-            <div class="card">
-                            <div class="card-photo">
-                    
-                                <div class="card-buttons">
-                                    <svg class="fav" width="24" height="24">
-                                        <use href="img/icons.svg#icon-heart-fill"></use>
-                                    </svg>
-                                    <svg class="share" width="24" height="24">
-                                        <use href="img/icons.svg#icon-share"></use>
-                                    </svg>
-                                </div>
-                                <img src="/img/night3.jpg" alt="">
-                            </div>
-                            <div class="card-content">
-                                <div class="rating">
-                                    <span class="stars">
-                                        <svg class="icon-star checked-star" width="24" height="24">
-                                            <use href="img/icons.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="icon checked-star" width="24" height="24">
-                                            <use href="img/icons.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="icon checked-star" width="24" height="24">
-                                            <use href="img/icons.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="icon checked-star" width="24" height="24">
-                                            <use href="img/icons.svg#icon-star"></use>
-                                        </svg>
-                                        <svg class="icon checked-star" width="24" height="24">
-                                            <use href="img/icons.svg#icon-star"></use>
-                                        </svg>
-                                    </span>
-            
-                                    <span class="review-count">187 reviews</span>
-                                </div>
-                                <h3 class="card-title">DuPort Pool Club El Gouna</h3>
-                                <p class="card-description">DuPort Pool Club El Gouna is set out to be among Kyiv’s
-                                most exclusive nightlife venues. The regal, wood-panelled...</p>
-                            </div>
+            <div class="card-content">
+              <div class="rating">
+                <span class="stars">
+                  <svg
+                    class="icon-star checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                </span>
+
+                <span class="review-count"
+                  >187 reviews</span
+                >
+              </div>
+              <h3 class="card-title">
+                Elements Club & Lounge
+              </h3>
+              <p class="card-description">
+                An American inspired night sport,
+                offering offbeat dance floor that
+                is rocked daily by our talented
+                DJ's to vocal performances and
+                Karaoke nights
+              </p>
             </div>
-            
-            </div>  
-        </div> 
+          </div>
+
+          <div class="card">
+            <div class="card-photo">
+              <div class="card-buttons">
+                <svg
+                  class="fav"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-heart-fill"></use>
+                </svg>
+                <svg
+                  class="share"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-share"></use>
+                </svg>
+              </div>
+              <img src="img/night1.jpeg" alt="" />
+            </div>
+            <div class="card-content">
+              <div class="rating">
+                <span class="stars">
+                  <svg
+                    class="icon-star checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                </span>
+
+                <span class="review-count"
+                  >187 reviews</span
+                >
+              </div>
+              <h3 class="card-title">
+                DuPort Pool Club El Gouna
+              </h3>
+              <p class="card-description">
+                DuPort Pool Club El Gouna is set
+                out to be among Kyiv’s most
+                exclusive nightlife venues. The
+                regal, wood-panelled...
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-photo">
+              <div class="card-buttons">
+                <svg
+                  class="fav"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-heart-fill"></use>
+                </svg>
+                <svg
+                  class="share"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-share"></use>
+                </svg>
+              </div>
+              <img src="img/night2.jpeg" alt="" />
+            </div>
+            <div class="card-content">
+              <div class="rating">
+                <span class="stars">
+                  <svg
+                    class="icon-star checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                </span>
+
+                <span class="review-count"
+                  >187 reviews</span
+                >
+              </div>
+              <h3 class="card-title">
+                DuPort Pool Club El Gouna
+              </h3>
+              <p class="card-description">
+                DuPort Pool Club El Gouna is set
+                out to be among Kyiv’s most
+                exclusive nightlife venues. The
+                regal, wood-panelled...
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-photo">
+              <div class="card-buttons">
+                <svg
+                  class="fav"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-heart-fill"></use>
+                </svg>
+                <svg
+                  class="share"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-share"></use>
+                </svg>
+              </div>
+              <img src="img/night3.jpg" alt="" />
+            </div>
+            <div class="card-content">
+              <div class="rating">
+                <span class="stars">
+                  <svg
+                    class="icon-star checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                </span>
+
+                <span class="review-count"
+                  >187 reviews</span
+                >
+              </div>
+              <h3 class="card-title">
+                DuPort Pool Club El Gouna
+              </h3>
+              <p class="card-description">
+                DuPort Pool Club El Gouna is set
+                out to be among Kyiv’s most
+                exclusive nightlife venues. The
+                regal, wood-panelled...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="partners">
-        <div class="container">
-            <h2>OUR PARTNERS</h2>
-            <ul class="partners-list">
-                <li><img src="/img/partners/Card Flags-1.jpg" alt=""></li>
-                <li><img src="/img/partners/Card Flags-2.jpg" alt=""></li>
-                <li><img src="/img/partners/Card Flags-3.jpg" alt=""></li>
-                <li><img src="/img/partners/Card Flags.jpg" alt=""></li>
-                <li><img src="/img/partners/Card Flags-4.jpg" alt=""></li>
-                <li><img src="/img/partners/Card Flags-5.jpg" alt=""></li>
-                <li><img src="/img/partners/Card Flags-6.jpg" alt=""></li>
-                <li><img src="/img/partners/Card Flags-7.jpg" alt=""></li>
-                <li><img src="/img/partners/Card Flags-8.jpg" alt=""></li>
-                <li><img src="/img/partners/Card Flags-9.jpg" alt=""></li>
-                <li><img src="/img/partners/Card Flags-10.jpg" alt=""></li>
-                <li><img src="/img/partners/Card Flags-11.jpg" alt=""></li>
-                <li><img src="/img/partners/Card Flags-12.jpg" alt=""></li>
-                <li><img src="/img/partners/Card Flags-13.jpg" alt=""></li>
-            </ul>
-        </div>
-        
-
+      <div class="container">
+        <h2>OUR PARTNERS</h2>
+        <ul class="partners-list">
+          <li>
+            <img
+              src="img/partners/Card Flags-1.jpg"
+              alt="" />
+          </li>
+          <li>
+            <img
+              src="img/partners/Card Flags-2.jpg"
+              alt="" />
+          </li>
+          <li>
+            <img
+              src="img/partners/Card Flags-3.jpg"
+              alt="" />
+          </li>
+          <li>
+            <img
+              src="img/partners/Card Flags.jpg"
+              alt="" />
+          </li>
+          <li>
+            <img
+              src="img/partners/Card Flags-4.jpg"
+              alt="" />
+          </li>
+          <li>
+            <img
+              src="img/partners/Card Flags-5.jpg"
+              alt="" />
+          </li>
+          <li>
+            <img
+              src="img/partners/Card Flags-6.jpg"
+              alt="" />
+          </li>
+          <li>
+            <img
+              src="img/partners/Card Flags-7.jpg"
+              alt="" />
+          </li>
+          <li>
+            <img
+              src="img/partners/Card Flags-8.jpg"
+              alt="" />
+          </li>
+          <li>
+            <img
+              src="img/partners/Card Flags-9.jpg"
+              alt="" />
+          </li>
+          <li>
+            <img
+              src="img/partners/Card Flags-10.jpg"
+              alt="" />
+          </li>
+          <li>
+            <img
+              src="img/partners/Card Flags-11.jpg"
+              alt="" />
+          </li>
+          <li>
+            <img
+              src="img/partners/Card Flags-12.jpg"
+              alt="" />
+          </li>
+          <li>
+            <img
+              src="img/partners/Card Flags-13.jpg"
+              alt="" />
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="food offers">
-        <div class="container">
-            <div class="offers-header">
-                <h2>FOOD & DINING GUIDE IN Kyiv</h2>
-                <a href="/" class="see-all">SEE ALL</a>
-            </div>
-    
-            <div class="offers-slider">
-    
-                <div class="card">
-                    <div class="card-photo">
-                        <span class="sticker">national</span>
-                        <div class="card-buttons">
-                            <svg class="fav" width="24" height="24">
-                                <use href="img/icons.svg#icon-heart-fill"></use>
-                            </svg>
-                            <svg class="share" width="24" height="24">
-                                <use href="img/icons.svg#icon-share"></use>
-                            </svg>
-                        </div>
-    
-                        <img src="/img/food1.jpeg" alt="">
-                    </div>
-    
-                    <div class="card-content">
-                        <div class="rating">
-                            <span class="stars">
-                                <svg class="icon-star checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                            </span>
-    
-                            <span class="review-count">187 reviews</span>
-                        </div>
-                        <h3 class="card-title">Barvy</h3>
-                        <p class="card-description">Local cuisine, Cafe, Diner, Ukrainian, Contemporary, Vegetarian Friendly</p>
-                    </div>
-                </div>
-    
-                <div class="card">
-                    <div class="card-photo">
-                        <span class="sticker">American</span>
-                        <div class="card-buttons">
-                            <svg class="fav" width="24" height="24">
-                                <use href="img/icons.svg#icon-heart-fill"></use>
-                            </svg>
-                            <svg class="share" width="24" height="24">
-                                <use href="img/icons.svg#icon-share"></use>
-                            </svg>
-                        </div>
-                        <img src="/img/food2.jpg" alt="">
-                    </div>
-                    <div class="card-content">
-                        <div class="rating">
-                            <span class="stars">
-                                <svg class="icon-star checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                            </span>
-    
-                            <span class="review-count">187 reviews</span>
-                        </div>
-                        <h3 class="card-title">Zdorovyy Hluzd</h3>
-                        <p class="card-description">American, Steakhouse, Barbecue, European, Seafood</p>
-                    </div>
-                </div>
-    
-                <div class="card">
-                    <div class="card-photo">
-                        <span class="sticker">Bar</span>
-                        <div class="card-buttons">
-                            <svg class="fav" width="24" height="24">
-                                <use href="img/icons.svg#icon-heart-fill"></use>
-                            </svg>
-                            <svg class="share" width="24" height="24">
-                                <use href="img/icons.svg#icon-share"></use>
-                            </svg>
-                        </div>
-                        <img src="/img/food1.jpeg" alt="">
-                    </div>
-                    <div class="card-content">
-                        <div class="rating">
-                            <span class="stars">
-                                <svg class="icon-star checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                            </span>
-    
-                            <span class="review-count">187 reviews</span>
-                        </div>
-                        <h3 class="card-title">Pivna Duma</h3>
-                        <p class="card-description">Vegetarian Friendly, Vegan Options</p>
-                    </div>
-                </div>
-
-                                <div class="card">
-                    <div class="card-photo">
-                        <span class="sticker">national</span>
-                        <div class="card-buttons">
-                            <svg class="fav" width="24" height="24">
-                                <use href="img/icons.svg#icon-heart-fill"></use>
-                            </svg>
-                            <svg class="share" width="24" height="24">
-                                <use href="img/icons.svg#icon-share"></use>
-                            </svg>
-                        </div>
-    
-                        <img src="/img/food1.jpeg" alt="">
-                    </div>
-    
-                    <div class="card-content">
-                        <div class="rating">
-                            <span class="stars">
-                                <svg class="icon-star checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                            </span>
-    
-                            <span class="review-count">187 reviews</span>
-                        </div>
-                        <h3 class="card-title">Barvy</h3>
-                        <p class="card-description">Local cuisine, Cafe, Diner, Ukrainian, Contemporary, Vegetarian Friendly</p>
-                    </div>
-                </div>
-    
-                <div class="card">
-                    <div class="card-photo">
-                        <span class="sticker">American</span>
-                        <div class="card-buttons">
-                            <svg class="fav" width="24" height="24">
-                                <use href="img/icons.svg#icon-heart-fill"></use>
-                            </svg>
-                            <svg class="share" width="24" height="24">
-                                <use href="img/icons.svg#icon-share"></use>
-                            </svg>
-                        </div>
-                        <img src="/img/food2.jpg" alt="">
-                    </div>
-                    <div class="card-content">
-                        <div class="rating">
-                            <span class="stars">
-                                <svg class="icon-star checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                            </span>
-    
-                            <span class="review-count">187 reviews</span>
-                        </div>
-                        <h3 class="card-title">Zdorovyy Hluzd</h3>
-                        <p class="card-description">American, Steakhouse, Barbecue, European, Seafood</p>
-                    </div>
-                </div>
-    
-                <div class="card">
-                    <div class="card-photo">
-                        <span class="sticker">Bar</span>
-                        <div class="card-buttons">
-                            <svg class="fav" width="24" height="24">
-                                <use href="img/icons.svg#icon-heart-fill"></use>
-                            </svg>
-                            <svg class="share" width="24" height="24">
-                                <use href="img/icons.svg#icon-share"></use>
-                            </svg>
-                        </div>
-                        <img src="/img/food1.jpeg" alt="">
-                    </div>
-                    <div class="card-content">
-                        <div class="rating">
-                            <span class="stars">
-                                <svg class="icon-star checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                                <svg class="icon checked-star" width="24" height="24">
-                                    <use href="img/icons.svg#icon-star"></use>
-                                </svg>
-                            </span>
-    
-                            <span class="review-count">187 reviews</span>
-                        </div>
-                        <h3 class="card-title">Pivna Duma</h3>
-                        <p class="card-description">Vegetarian Friendly, Vegan Options</p>
-                    </div>
-                </div>
-
-
-            </div>
-    
+      <div class="container">
+        <div class="offers-header">
+          <h2>FOOD & DINING GUIDE IN Kyiv</h2>
+          <a href="/" class="see-all">SEE ALL</a>
         </div>
-    
+
+        <div class="offers-slider">
+          <div class="card">
+            <div class="card-photo">
+              <span class="sticker"
+                >national</span
+              >
+              <div class="card-buttons">
+                <svg
+                  class="fav"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-heart-fill"></use>
+                </svg>
+                <svg
+                  class="share"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-share"></use>
+                </svg>
+              </div>
+
+              <img src="img/food1.jpeg" alt="" />
+            </div>
+
+            <div class="card-content">
+              <div class="rating">
+                <span class="stars">
+                  <svg
+                    class="icon-star checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                </span>
+
+                <span class="review-count"
+                  >187 reviews</span
+                >
+              </div>
+              <h3 class="card-title">Barvy</h3>
+              <p class="card-description">
+                Local cuisine, Cafe, Diner,
+                Ukrainian, Contemporary,
+                Vegetarian Friendly
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-photo">
+              <span class="sticker"
+                >American</span
+              >
+              <div class="card-buttons">
+                <svg
+                  class="fav"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-heart-fill"></use>
+                </svg>
+                <svg
+                  class="share"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-share"></use>
+                </svg>
+              </div>
+              <img src="img/food2.jpg" alt="" />
+            </div>
+            <div class="card-content">
+              <div class="rating">
+                <span class="stars">
+                  <svg
+                    class="icon-star checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                </span>
+
+                <span class="review-count"
+                  >187 reviews</span
+                >
+              </div>
+              <h3 class="card-title">
+                Zdorovyy Hluzd
+              </h3>
+              <p class="card-description">
+                American, Steakhouse, Barbecue,
+                European, Seafood
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-photo">
+              <span class="sticker">Bar</span>
+              <div class="card-buttons">
+                <svg
+                  class="fav"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-heart-fill"></use>
+                </svg>
+                <svg
+                  class="share"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-share"></use>
+                </svg>
+              </div>
+              <img src="img/food1.jpeg" alt="" />
+            </div>
+            <div class="card-content">
+              <div class="rating">
+                <span class="stars">
+                  <svg
+                    class="icon-star checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                </span>
+
+                <span class="review-count"
+                  >187 reviews</span
+                >
+              </div>
+              <h3 class="card-title">
+                Pivna Duma
+              </h3>
+              <p class="card-description">
+                Vegetarian Friendly, Vegan Options
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-photo">
+              <span class="sticker"
+                >national</span
+              >
+              <div class="card-buttons">
+                <svg
+                  class="fav"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-heart-fill"></use>
+                </svg>
+                <svg
+                  class="share"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-share"></use>
+                </svg>
+              </div>
+
+              <img src="img/food1.jpeg" alt="" />
+            </div>
+
+            <div class="card-content">
+              <div class="rating">
+                <span class="stars">
+                  <svg
+                    class="icon-star checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                </span>
+
+                <span class="review-count"
+                  >187 reviews</span
+                >
+              </div>
+              <h3 class="card-title">Barvy</h3>
+              <p class="card-description">
+                Local cuisine, Cafe, Diner,
+                Ukrainian, Contemporary,
+                Vegetarian Friendly
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-photo">
+              <span class="sticker"
+                >American</span
+              >
+              <div class="card-buttons">
+                <svg
+                  class="fav"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-heart-fill"></use>
+                </svg>
+                <svg
+                  class="share"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-share"></use>
+                </svg>
+              </div>
+              <img src="img/food2.jpg" alt="" />
+            </div>
+            <div class="card-content">
+              <div class="rating">
+                <span class="stars">
+                  <svg
+                    class="icon-star checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                </span>
+
+                <span class="review-count"
+                  >187 reviews</span
+                >
+              </div>
+              <h3 class="card-title">
+                Zdorovyy Hluzd
+              </h3>
+              <p class="card-description">
+                American, Steakhouse, Barbecue,
+                European, Seafood
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-photo">
+              <span class="sticker">Bar</span>
+              <div class="card-buttons">
+                <svg
+                  class="fav"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-heart-fill"></use>
+                </svg>
+                <svg
+                  class="share"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-share"></use>
+                </svg>
+              </div>
+              <img src="img/food1.jpeg" alt="" />
+            </div>
+            <div class="card-content">
+              <div class="rating">
+                <span class="stars">
+                  <svg
+                    class="icon-star checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                  <svg
+                    class="icon checked-star"
+                    width="24"
+                    height="24">
+                    <use
+                      href="img/icons.svg#icon-star"></use>
+                  </svg>
+                </span>
+
+                <span class="review-count"
+                  >187 reviews</span
+                >
+              </div>
+              <h3 class="card-title">
+                Pivna Duma
+              </h3>
+              <p class="card-description">
+                Vegetarian Friendly, Vegan Options
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="transfers">
-        <div class="container">
-            <h2 class="transfer-h2">Kyiv Airport Transfers</h2>
-            <div class="transfer-block">
-            <form class="transfer-form">
+      <div class="container">
+        <h2 class="transfer-h2">
+          Kyiv Airport Transfers
+        </h2>
+        <div class="transfer-block">
+          <form class="transfer-form">
+            <label class="form-grid">
+              <svg
+                class="icon"
+                width="24"
+                height="24">
+                <use
+                  href="img/icons.svg#icon-airplane"></use>
+              </svg>
+              <select
+                name="airports"
+                id="airports"
+                class="form-el">
+                <option
+                  value=""
+                  disabled
+                  selected>
+                  Select airport
+                </option>
+                <option value="kbp">
+                  Kyiv-Boryspil Airport (KBP)
+                </option>
+                <option value="kyiv">
+                  Kyiv International Airport
+                </option>
+              </select>
+            </label>
 
-                <label class="form-grid">
+            <label class="form-grid">
+              <svg
+                class="icon"
+                width="24"
+                height="24">
+                <use
+                  href="img/icons.svg#icon-mappin"></use>
+              </svg>
+              <input
+                name="to"
+                type="text"
+                class="form-el"
+                placeholder="To (airport, port, address)" />
+            </label>
 
-                    <svg class="icon" width="24" height="24">
-                        <use href="img/icons.svg#icon-airplane"></use>
-                    </svg>
-                    <select name="airports" id="airports" class="form-el">
-                        <option value="" disabled selected>Select airport</option>
-                        <option value="kbp">Kyiv-Boryspil Airport (KBP)</option>
-                        <option value="kyiv">Kyiv International Airport</option>
-                    </select>
+            <div class="transfer-opt">
+              <label class="form-grid">
+                <svg
+                  class="icon"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-calendarcheck"></use>
+                </svg>
+                <input
+                  name="date"
+                  placeholder="Select date"
+                  class="form-el"
+                  type="text"
+                  onfocus="(this.type='date')"
+                  onblur="(this.type='date')"
+                  id="date" />
+              </label>
 
-                </label>
+              <label class="form-grid">
+                <svg
+                  class="icon"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-timer"></use>
+                </svg>
+                <input
+                  name="time"
+                  placeholder="Select time"
+                  type="text"
+                  name="transfer-time"
+                  id="transfer-time"
+                  class="form-el"
+                  onfocus="(this.type='time')"
+                  onblur="(this.type='time')" />
+              </label>
 
-                <label class="form-grid">
-                    <svg class="icon" width="24" height="24">
-                        <use href="img/icons.svg#icon-mappin"></use>
-                    </svg>
-                    <input name="to" type="text" class="form-el" placeholder="To (airport, port, address)">
-                </label>
+              <label class="form-grid">
+                <svg
+                  class="icon"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-users"></use>
+                </svg>
 
-                <div class="transfer-opt">
-                
-                <label class="form-grid">
-                    <svg class="icon" width="24" height="24">
-                        <use href="img/icons.svg#icon-calendarcheck"></use>
-                    </svg>
-                    <input name="date" placeholder="Select date" class="form-el" type="text" onfocus="(this.type='date')" onblur="(this.type='date')" id="date" />
-                </label>
+                <select
+                  name="peopleTransfer"
+                  id="people-transfer"
+                  class="form-el">
+                  <option
+                    value=""
+                    disabled
+                    selected
+                    class="holder">
+                    Passengers
+                  </option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5+">5+</option>
+                </select>
+              </label>
 
-                <label class="form-grid">
-                    <svg class="icon" width="24" height="24">
-                        <use href="img/icons.svg#icon-timer"></use>
-                    </svg>
-                    <input name="time" placeholder="Select time" type="text" name="transfer-time" id="transfer-time" class="form-el" onfocus="(this.type='time')" onblur="(this.type='time')">
-                </label>
+              <label class="form-grid">
+                <svg
+                  class="icon"
+                  width="24"
+                  height="24">
+                  <use
+                    href="img/icons.svg#icon-bag"></use>
+                </svg>
 
-                <label class="form-grid">
-                    <svg class="icon" width="24" height="24">
-                        <use href="img/icons.svg#icon-users"></use>
-                    </svg>
-
-                    <select name="peopleTransfer" id="people-transfer" class="form-el">
-                        <option value="" disabled selected class="holder">Passengers</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5+">5+</option>
-                    </select>
-                </label>
-
-                <label class="form-grid">
-                    <svg class="icon" width="24" height="24">
-                        <use href="img/icons.svg#icon-bag"></use>
-                    </svg>
-
-                    <select name="luggageTransfer" id="luggage-transfer" class="form-el">
-                        <option value="" disabled selected>Luggage pieces</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5+">5+</option>
-                    </select>
-                </label>
-
-                </div>
-
-                <button type="submit" class="order-btn">
-                    <svg class="icon-order-btn" width="24" height="24">
-                    <use href="img/icons.svg#icon-signin"></use>
-                </svg>Order</button>
-            </form>
-
-            <ul class="faq-transfer">
-                <li><h4>Is it easy to find a taxi at Kyiv airport?</h4>
-                    <p>Taxi in Kiev airports: Boryspil and Zhuliany. Airport Shuttle services from the airports to the city center and other
-                    cities of Ukraine. There is also a taxi service back to the airport. Fixed price. We accept credit cards.</p>
-            </li>
-                <li>
-                    <h4>Where will my driver find me?</h4>
-                    <p>The day before you arrive, you will receive an email from us containing your driver’s name, phone number, and a recent
-                    photo. Once you land at Kyiv Airport and go through the arrivals gate, your driver will be waiting for you holding
-                    up a sign with your name on it so you can’t miss them. You can also contact your driver via the Welcome Pickups app chat
-                    feature.</p>
-                </li>
-                <li>
-                    <h4>What happens if my flight is delayed?</h4>
-                    <p>You really don’t need to worry about your flight being delayed or arriving earlier than expected. Flight plans are
-                    beyond your control and can change at a moment’s notice. We know this, and that’s why all of our Kyiv airport taxi
-                    drivers receive live updates on your plane’s arrival time. That way, we can guarantee that your driver will be there
-                    waiting for you when you arrive, at no extra cost.</p>
-                </li>
-            </ul>
-
+                <select
+                  name="luggageTransfer"
+                  id="luggage-transfer"
+                  class="form-el">
+                  <option
+                    value=""
+                    disabled
+                    selected>
+                    Luggage pieces
+                  </option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5+">5+</option>
+                </select>
+              </label>
             </div>
 
+            <button
+              type="submit"
+              class="order-btn">
+              <svg
+                class="icon-order-btn"
+                width="24"
+                height="24">
+                <use
+                  href="img/icons.svg#icon-signin"></use></svg
+              >Order
+            </button>
+          </form>
+
+          <ul class="faq-transfer">
+            <li>
+              <h4>
+                Is it easy to find a taxi at Kyiv
+                airport?
+              </h4>
+              <p>
+                Taxi in Kiev airports: Boryspil
+                and Zhuliany. Airport Shuttle
+                services from the airports to the
+                city center and other cities of
+                Ukraine. There is also a taxi
+                service back to the airport. Fixed
+                price. We accept credit cards.
+              </p>
+            </li>
+            <li>
+              <h4>
+                Where will my driver find me?
+              </h4>
+              <p>
+                The day before you arrive, you
+                will receive an email from us
+                containing your driver’s name,
+                phone number, and a recent photo.
+                Once you land at Kyiv Airport and
+                go through the arrivals gate, your
+                driver will be waiting for you
+                holding up a sign with your name
+                on it so you can’t miss them. You
+                can also contact your driver via
+                the Welcome Pickups app chat
+                feature.
+              </p>
+            </li>
+            <li>
+              <h4>
+                What happens if my flight is
+                delayed?
+              </h4>
+              <p>
+                You really don’t need to worry
+                about your flight being delayed or
+                arriving earlier than expected.
+                Flight plans are beyond your
+                control and can change at a
+                moment’s notice. We know this, and
+                that’s why all of our Kyiv airport
+                taxi drivers receive live updates
+                on your plane’s arrival time. That
+                way, we can guarantee that your
+                driver will be there waiting for
+                you when you arrive, at no extra
+                cost.
+              </p>
+            </li>
+          </ul>
         </div>
+      </div>
     </section>
 
     <footer>
-        <div class="container footer-content">
-            <div class="footer-nav">
-                <div>
-                    <p class="footer-title">OFFER</p>
-                    <ul> 
-                        <li><a href="/">Public offer</a></li>
-                        <li><a href="/">Privacy policy</a></li>
-                        <li><a href="/">Terms of user</a></li>
-                        <li><a href="/">Cookie policy</a></li>
-                    </ul>
-                </div>
+      <div class="container footer-content">
+        <div class="footer-nav">
+          <div>
+            <p class="footer-title">OFFER</p>
+            <ul>
+              <li>
+                <a href="/">Public offer</a>
+              </li>
+              <li>
+                <a href="/">Privacy policy</a>
+              </li>
+              <li>
+                <a href="/">Terms of user</a>
+              </li>
+              <li>
+                <a href="/">Cookie policy</a>
+              </li>
+            </ul>
+          </div>
 
-                <div>
-                    <p class="footer-title">CLIENTS</p>
-                    <ul>
-                        <li><a href="/">Reviews</a></li>
-                        <li><a href="/">About us</a></li>
-                        <li><a href="/">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="contacts">
-                <p class="footer-title">CONTACTS</p>
-                <ul>
-                    <li class="contact-link">
-                        <p class="contact-title">PHONE</p>
-                        <a href="tel:+380000000000">+380 00 000 0000</a>
-                    </li>
-                    <li class="contact-link">
-                        <p class="contact-title contact-link">EMAIL</p>
-                        <a href="mailto:info@Kyiv.com">info@Kyiv.com</a>
-                    </li>
-                    <li>
-                        <p class="contact-title social-title">SOCIAL MEDIA</p>
-
-                                <ul class="socials-footer">
-                                    <li>
-                                        <a href="" class="social_link link">
-                                            <svg class="social_icon" width="24" height="24">
-                                                <use href="/img/icons.svg#icon-facebook"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="social_link link">
-                                            <svg class="social_icon" width="24" height="24">
-                                                <use href="/img/icons.svg#icon-instagram"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="social_link link">
-                                            <svg class="social_icon" width="24" height="24">
-                                                <use href="/img/icons.svg#icon-twitter"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="social_link link">
-                                            <svg class="social_icon" width="24" height="24">
-                                                <use href="/img/icons.svg#icon-youtube"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                    </li>
-                </ul>
-            </div>  
-
+          <div>
+            <p class="footer-title">CLIENTS</p>
+            <ul>
+              <li><a href="/">Reviews</a></li>
+              <li><a href="/">About us</a></li>
+              <li><a href="/">Contact</a></li>
+            </ul>
+          </div>
         </div>
 
-        <div class="footer-c">
-            <div>All Rights Reserved. © 2023 Kyiv.com</div>
+        <div class="contacts">
+          <p class="footer-title">CONTACTS</p>
+          <ul>
+            <li class="contact-link">
+              <p class="contact-title">PHONE</p>
+              <a href="tel:+380000000000"
+                >+380 00 000 0000</a
+              >
+            </li>
+            <li class="contact-link">
+              <p
+                class="contact-title contact-link">
+                EMAIL
+              </p>
+              <a href="mailto:info@Kyiv.com"
+                >info@Kyiv.com</a
+              >
+            </li>
+            <li>
+              <p
+                class="contact-title social-title">
+                SOCIAL MEDIA
+              </p>
+
+              <ul class="socials-footer">
+                <li>
+                  <a
+                    href=""
+                    class="social_link link">
+                    <svg
+                      class="social_icon"
+                      width="24"
+                      height="24">
+                      <use
+                        href="img/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="social_link link">
+                    <svg
+                      class="social_icon"
+                      width="24"
+                      height="24">
+                      <use
+                        href="img/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="social_link link">
+                    <svg
+                      class="social_icon"
+                      width="24"
+                      height="24">
+                      <use
+                        href="img/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href=""
+                    class="social_link link">
+                    <svg
+                      class="social_icon"
+                      width="24"
+                      height="24">
+                      <use
+                        href="img/icons.svg#icon-youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </div>
+      </div>
+
+      <div class="footer-c">
+        <div>
+          All Rights Reserved. © 2023 Kyiv.com
+        </div>
+      </div>
     </footer>
-    
+
     <script src="/js/main-slider.js"></script>
     <script src="/js/search-opener.js"></script>
     <script src="/js/transfer.js"></script>
     <script src="/js/transfer_sheets.js"></script>
-</body>
+  </body>
 </html>
